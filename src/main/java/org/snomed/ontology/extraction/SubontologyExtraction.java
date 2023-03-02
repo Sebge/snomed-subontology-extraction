@@ -113,7 +113,7 @@ public class SubontologyExtraction {
 		if(customRedundancyOptions.isEmpty()) { //with default redundancy elimination on both authoring and NNF definitions (RECOMMENDED)
 			generator.computeSubontology(outputRF2);
 		} else if(defaultAuthoringForm) { //default authoring form, custom nnf
-			generator.computeSubontology(outputRF2, customRedundancyOptions);
+			generator.computeSubontology(outputRF2, customRedundancyOptions, defaultAuthoringForm);
 		} else { //custom authoring and nnf (NOT RECOMMENDED)
 			//with non-default redundancy elimination options specified by user
 			generator.computeSubontology(outputRF2, customRedundancyOptions, defaultAuthoringForm);

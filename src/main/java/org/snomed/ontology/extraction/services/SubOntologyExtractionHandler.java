@@ -108,7 +108,7 @@ public class SubOntologyExtractionHandler {
 			authoringFormRedundancyOptions = inputRedundancyOptions;
 		} else {
 			Set<RedundancyOptions> defaultOptions = new HashSet<>();
-			defaultOptions.add(RedundancyOptions.eliminateLessSpecificRedundancy);
+			//defaultOptions.add(RedundancyOptions.eliminateLessSpecificRedundancy);
 			defaultOptions.add(RedundancyOptions.eliminateReflexivePVRedundancy);
 			defaultOptions.add(RedundancyOptions.eliminateRoleGroupRedundancy);
 			defaultOptions.add(RedundancyOptions.eliminateSufficientProximalGCIs);
